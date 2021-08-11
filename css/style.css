@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#page-container {
+  overflow-y: hidden;
+}
+* html {
+  scroll-behavior: smooth;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 17px;
+}
+
+/**
+* ----------------------------------------
+* STYLING HEADER SECTION
+* ----------------------------------------
+*/
+.header-section {
+  max-width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  overflow: hidden;
+  background: url(../images/thinguyen-blackbg.jpg) no-repeat fixed;
+}
+
+.header-section-content {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30vh;
+  padding-left: 2vw;
+  align-items: center;
+  position: relative;
+}
+
+.header-section-content h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 1em;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+
+.header-section-content h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.header-section-title {
+  margin-left: 3vw;
+  -webkit-animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+/* Animation scale up */
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+.header-section p {
+  color: white;
+  letter-spacing: 4px;
+  padding-left: 24px;
+  font-size: 20px;
+}
+
+/* PARRALAX */
+.header-section,
+.project-section {
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*SCROLL DOWN EFFECT & BTN*/
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid #fff;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+/**
+ * ----------------------------------------
+ * STYLING ABOUTME SECTION
+ * ----------------------------------------
+ */
+#aboutme {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme-details {
+  padding: 40px 0 40 0;
+  max-width: 600px;
+  text-align: center;
+}
+
+.aboutme-details .aboutme-h{
+  letter-spacing: 6px;
+  color: black;
+}
+.aboutme-details h2 {
+  font-size: 38px;
+}
+.aboutme-details p {
+padding-top: 40px;
+color: grey;
+letter-spacing: 1px;
+font-size: 16px;
+}
+
+
+/**
+* ----------------------------------------
+* STYLING SKILLS & PROJECT SECTIONS
+* ----------------------------------------
+*/
+
+.skills {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skills {
+  background: url(../images/coding-bw.jpg) no-repeat fixed;
+}
+
+.skills-left {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.skills-right {
+  flex-grow: 3;
+}
+
+.project-title {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.projects-container {
+  flex-grow: 3;
+}
+
+.skills .skills-left h3 {
+  color: #fff;
+  font-size: 48px;
+}
+
+
+.skills .skills-left h3 span,
+.project-title h3 span {
+  color: #23ffc8;
+}
+
+ .skills-right-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-right-div-details {
+  height: 300px;
+  width: 300px;
+  border: #23ffc8 1px solid;
+  padding: 20px 30px;
+}
+
+
+
+
+.skills-right-div-details:hover {
+  background-color: #23ffc81c;
+} 
+
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+
+
+.skills-right-div-details h6 span {
+  color: #23ffc8;
+  font-size: 28px;
+}
+
+.skills-right-div .skills-right-div-details h6 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-right-div .skills-right-div-details p {
+  color: #fff;
+  text-align: left;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  padding: 15px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 70px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #23ffc8;
+  background-color: #000;
+}
+
+
+/**
+* ----------------------------------------
+* STYLING PROJECT SECTION
+* ----------------------------------------
+*/
+
+.project-title h3 {
+  font-size: 48px;
+}
+
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.projects-container 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
+.projects-container .projects-card {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 4px 9px 21px -1px #000000; 
+box-shadow: 4px 9px 21px -1px #000000;
+}
+
+.projects-container .projects-card .imgBX,
+.projects-container .projects-card .contentBx {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projects-container .projects-card .imgBx img {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.projects-container .projects-card .contentBx::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    transition-delay: 0.5s;
+    border-left: #23ffc8 solid 10px;
+  }
+   
+
+  .projects-container .projects-card:hover .contentBx::before {
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0.1s;
+  }
+  
+  .projects-container .projects-card:hover .contentBx {
+    display: flex;
+    justify-content: center;
+  } 
+
+  .projects-container .projects-card .contentBx .content {
+      position: relative;
+      padding: 30px;
+      z-index: 1;
+      transition: 0.5s;
+      transform: translateX(-300px);
+      transition-delay: 0s;
+  }
+  
+  .projects-container .projects-card:hover .contentBx .content {
+      transform: translateX(0px);
+      transition-delay: 0.2s;
+  }
+
+  .projects-container .projects-card:hover .contentBx .content,
+  .projects-container .projects-card .contentBx .content h4 {
+      font-size: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #23ffc8;
+  }
+
+  
+
+  .projects-container .projects-card .contentBx .content p {
+      font-size: 16px;
+      line-height: 1.4em;
+      font-weight: 300;
+      color: aliceblue;
+  }
+
+  .projects-container .projects-card .contentBx .content a {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.projects-container .projects-card .contentBx .content a:hover {
+  color: salmon;
+}
+
+.projects-container .projects-card .contentBx .content i {
+font-size: 15px;
+} 
+
+
+/**
+* ----------------------------------------
+* STYLING CONTACT SECTION
+* ----------------------------------------
+*/
+.contact-section {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  background: url(../images/bg-walking-bw.jpg) no-repeat;
+  background-size: cover;
+}
+
+.contact-titre {
+  flex-grow: 1;
+}
+
+.contact-form {
+  flex-grow: 1;
+}

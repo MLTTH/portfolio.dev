@@ -1,0 +1,178 @@
+/**
+ * ----------------------------------------
+ * RESPONSIVE MEDIA QUERIES
+ * ----------------------------------------
+ */
+
+@media (max-width:1300px) {
+    .home .max-width{
+        margin-left:0px;
+    }
+
+    /* SKILLS SECTION */
+    
+ .skills {
+    display: flex;
+    flex-direction: column;
+    height: 180vh;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+
+.skills-left {
+    flex-grow: 0;
+  }
+  .skills-right {
+    flex-grow: 0;
+    flex: block;
+  }
+
+  .skills-right-div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .skills-right-div-details {
+    padding: 0 auto;
+    width: 100%;
+    background-position: fixed;
+  }
+  .skills-right-div-details {
+    height: 300px;
+    width: 700px;
+    border: #23ffc8 1px solid;
+    padding: 20px 30px;
+    margin: 30px 0px;
+  }
+}
+
+
+
+@media (max-width:941px){
+.header-section {
+    height: 30vh;
+}
+
+.header-section {
+    background: url(../images/animated-shape.svg) no-repeat fixed;
+    ;
+}
+.header-section-content {
+    padding-top: 25vh;
+}
+.header-section-content h1 {
+    font-size: 38px;
+}
+
+.header-section-content h2 {
+    font-size: 30px;
+}
+
+
+/* SKILLS SECTION */
+
+ .skills {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+}
+
+
+  .skills-right-div-details {
+    height: 400px;
+    width: 400px;
+    border: #23ffc8 1px solid;
+    padding: 20px 30px;
+  }
+
+  /* PROJECT SECTION */
+  .projects-container {
+    flex-grow: 0;
+  }
+  
+  .project-title {
+    flex-grow: 0;
+    display: block;
+  }
+
+  .projects-section {
+    display: block;
+    min-height: 100vh;
+    
+}
+
+.project-title h3 {
+    font-size: 48px;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+
+@media (max-width:690px) 
+{
+   .header-section {
+       padding-top: 10vh;
+   }
+
+    .header-section-content {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+    .header-section-content h1 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.7em;
+    text-transform: none;
+}
+
+    .header-section-content h2 {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 4px;
+        color: #23ffc8;
+        padding-bottom: 30px;
+    }
+
+    .header-section-content h2,
+    .header-section-content h1 {
+        padding-left: 0px;
+    }
+    .header-section-title {
+        margin-top: 8vh;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    /* ABOUT SECTION */
+    #aboutme {
+        height: 600px;
+      }
+
+    .aboutme-details {
+        padding: 10px 50px 20px;
+        text-align: left;
+    }
+
+    /* SKILLS SECTION*/
+    .skills-right-div-details {
+        height: 300px;
+        width: 300px;
+        border: #23ffc8 1px solid;
+        padding: 20px 30px;
+      }
+
+      .skills {
+        height: 165vh;
+        padding: 60px 0px;
+    }
+
+}
