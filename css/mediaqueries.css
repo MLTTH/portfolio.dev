@@ -21,7 +21,6 @@
     margin-top: 10px;
 }
 
-
 .skills-left {
     flex-grow: 0;
   }
@@ -72,6 +71,11 @@
     font-size: 30px;
 }
 
+.header-socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
 
 /* SKILLS SECTION */
 
@@ -110,6 +114,13 @@
     text-align: center;
     padding: 40px 0px 40px 0px;
   }
+
+  /* CONTACT SECTION */
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 }
 
 
@@ -175,4 +186,16 @@
         padding: 60px 0px;
     }
 
+    /* CONTACT SECTION */
+    .contact-section .contact-form .contact-form-input-msg input,
+.contact-section .contact-form .contact-form-input input {
+    width: 100%;
+    padding: 10px 0px; 
+  }
+
+    .contact-form {
+      width: 100%;
+      margin: 0;
+      border: none;
+    }
 }
