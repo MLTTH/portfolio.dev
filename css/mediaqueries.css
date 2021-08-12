@@ -52,7 +52,10 @@
 
 
 @media (max-width:941px){
-.header-section {
+.scroll-down {
+  display: none;
+}
+  .header-section {
     height: 30vh;
 }
 
@@ -76,6 +79,8 @@
   flex-direction: row;
   justify-content: center;
   }
+
+ 
 
 /* SKILLS SECTION */
 
@@ -105,7 +110,7 @@
 
   .projects-section {
     display: block;
-    min-height: 100vh;
+    min-height: 80vh;
     
 }
 
@@ -120,6 +125,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.contact-form {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  border: none;
 }
 }
 
@@ -165,7 +177,7 @@
 
     /* ABOUT SECTION */
     #aboutme {
-        height: 600px;
+        height: 400px;
       }
 
     .aboutme-details {
@@ -186,6 +198,9 @@
         padding: 60px 0px;
     }
 
+    /* PROJECT SECTION */
+  
+
     /* CONTACT SECTION */
     .contact-section .contact-form .contact-form-input-msg input,
 .contact-section .contact-form .contact-form-input input {
@@ -193,9 +208,5 @@
     padding: 10px 0px; 
   }
 
-    .contact-form {
-      width: 100%;
-      margin: 0;
-      border: none;
-    }
+    
 }

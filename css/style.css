@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Prata', serif;
 }
 
 #page-container {
@@ -27,6 +26,8 @@ p {
 * STYLING HEADER SECTION
 * ----------------------------------------
 */
+
+
 .header-section {
   max-width: 100%;
   height: 100vh;
@@ -74,30 +75,8 @@ p {
 
 .header-section-title {
   margin-left: 3vw;
-  -webkit-animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
-/* Animation scale up */
-  @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
+
 
 .header-section p {
   color: white;
@@ -204,7 +183,7 @@ font-size: 16px;
 */
 
 .skills {
-  height: 90vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -259,19 +238,9 @@ font-size: 16px;
   padding: 20px 30px;
 }
 
-
-
-
 .skills-right-div-details:hover {
   background-color: #23ffc81c;
 } 
-
-
-/**
- * ----------------------------------------
- * animation slide-bottom
- * ----------------------------------------
- */
 
 
 .skills-right-div-details h6 span {
