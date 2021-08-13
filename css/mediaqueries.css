@@ -142,6 +142,10 @@
        padding-top: 10vh;
    }
 
+   nav {
+     display: none;
+   }
+
     .header-section-content {
         flex-direction: column;
         padding: 0px;
